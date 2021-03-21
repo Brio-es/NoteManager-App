@@ -61,11 +61,6 @@ namespace Notepad_App
                 c_Tittle = list_of_Notes[current_index].Note_Tittle;
                 c_content = list_of_Notes[current_index].Note_Content;
 
-
-                Console.WriteLine(c_Tittle);
-                Console.WriteLine(c_content);
-
-
                 clearall();
 
                 Tittle_inspace.Text = c_Tittle;
@@ -85,7 +80,6 @@ namespace Notepad_App
 
         private void List_Notes_inspace_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Console.WriteLine(List_Notes_inspace.SelectedIndex);
             current_index = List_Notes_inspace.SelectedIndex;
             change_t_c_content();
 
@@ -109,14 +103,12 @@ namespace Notepad_App
 
         private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Add");
             create_note(Tittle_inspace.Text, Note_Content_inspace.Text);
             clearall();
             
         }
         private void Button_Click_Delete(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Delete");
             list_of_Notes.RemoveAt(current_index);
             List_Notes_inspace.Items.RemoveAt(current_index);
             clearall();
@@ -140,3 +132,4 @@ namespace Notepad_App
         }
     }
 }
+
