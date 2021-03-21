@@ -17,14 +17,15 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="List_Notes_inspace" HorizontalAlignment="Left" Height="284" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" SelectionChanged="List_Notesxa_SelectionChanged" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="List_Notes_inspace" HorizontalAlignment="Left" Height="284" Margin="10,10,0,0" VerticalAlignment="Top" Width="112" SelectionChanged="List_Notes_inspace_SelectionChanged" Grid.Row="1" Grid.ColumnSpan="2"/>
 
         <Button x:Name="Add_Note_Button" Content="ADD" HorizontalAlignment="Left" Height="19" Margin="10,10,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click_Add" Grid.Row="2"/>
         <Button x:Name="Delete_Note_Button" Content="DELETE" HorizontalAlignment="Left" Height="19" Margin="10,10,0,0" VerticalAlignment="Top" Width="46" Click="Button_Click_Delete" Grid.Row="2" Grid.Column="1"/>
-        <TextBox x:Name="Note_Content_inspace" Grid.Column="2" HorizontalAlignment="Left" Height="284" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Note Content" VerticalAlignment="Top" Width="640" TextChanged="Note_Content_inspace_TextChanged"/>
-        <TextBox x:Name="Tittle_inspace" Grid.Column="2" HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" TextWrapping="Wrap" Text="Tittle" VerticalAlignment="Top" Width="640" TextChanged="Tittle_inspace_TextChanged"/>
+        
+        <Button x:Name="Save_button" Content="Save" Grid.Column="2" HorizontalAlignment="Left" Height="56" Margin="580,10,0,0" VerticalAlignment="Top" Width="63" Click="Save_button_Click"/>
 
-
+        <TextBox x:Name="Note_Content_inspace" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Height="284" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Note Content" VerticalAlignment="Top" Width="633" TextChanged="Note_Content_inspace_TextChanged"/>
+        <TextBox x:Name="Tittle_inspace" FontSize="30" Grid.Column="2" HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" TextWrapping="Wrap" Text="Tittle" VerticalAlignment="Top" Width="565" TextChanged="Tittle_inspace_TextChanged"/>
 
 
     </Grid>
