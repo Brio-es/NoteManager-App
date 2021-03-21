@@ -38,7 +38,7 @@ namespace Notepad_App
         public MainWindow()
         {
             InitializeComponent();
-            create_note("new note", "this is the content of the new note");
+            create_note("New Note", "This is a sample note. You can click the [ADD] button to add a new note, or you can click [DELETE] to delete the note you have selected. The [SAVE] button serves to update the content of an existing note. ");
 
         }
 
